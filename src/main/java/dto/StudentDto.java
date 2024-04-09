@@ -6,7 +6,7 @@ public class StudentDto {
     private String email;
     private int semester;
 
-    public StudentDto(int id, String name, String email, int semester) {
+    public record (int id, String name, String email, int semester) {
         this.id = id;
         this.name = name;
         this.email = email;
